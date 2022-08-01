@@ -44,6 +44,6 @@ io.on("connection", (socket)=>{
 });
 
 //server listening
-httpServer.listen(3000, ()=>{
-    console.log("server is running");
+httpServer.listen(process.env.PORT || 3000, ()=>{
+    console.log("Server is running @3000");
 })
